@@ -1,4 +1,6 @@
 import React from 'react';
+import Link from 'next/link';
+
 
 const Hero = ({heading, message}) => {
   return (
@@ -8,9 +10,15 @@ const Hero = ({heading, message}) => {
       <div className='p-5 text-white z-[2] mt-[-10rem]'>
         <h2 className='text-5xl font-bold'>{heading}</h2>
         <p className='py-5 text-xl'>{message}</p>
-        <button className='px-8 py-2 border '>Oui</button>
-        <button className='px-8 py-2 border mx-4'>Non</button>
-        <button className='px-8 py-2 border mx-4'>Je suis témoin</button>
+        <button className='px-8 mx-2 py-2 border '><Link href="/protectform">
+        oui
+        </Link></button>
+
+        <button className='px-8 mx-2 py-2 border '>
+          <Link href="/protectform">
+        Dashboard
+        </Link></button>
+        <button className='px-8 py-2 border mx-2'>Je suis témoin</button>
        
       </div>
     </div>
