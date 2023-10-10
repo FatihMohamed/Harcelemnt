@@ -11,12 +11,12 @@ const Hero = ({heading, message}) => {
         <h2 className='text-5xl font-bold'>{heading}</h2>
         <p className='py-5 text-xl'>{message}</p>
         <button className='px-8 mx-2 py-2 border '><Link href="/protectform">
-        oui
+        Oui
         </Link></button>
 
         <button className='px-8 mx-2 py-2 border '>
           <Link href="/protectform">
-        Dashboard
+        Non
         </Link></button>
         <button className='px-8 py-2 border mx-2'>Je suis témoin</button>
        
