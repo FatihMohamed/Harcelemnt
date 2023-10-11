@@ -32,7 +32,7 @@ const Navbar = () => {
       <div className='max-w-[1240px] m-auto flex justify-between items-center p-4 text-white'>
         <Link href='/'>
           <h1 style={{ color: `${textColor}` }} className='font-bold text-4xl'>
-            Heal
+            SafeWork
           </h1>
         </Link>
         <ul style={{ color: `${textColor}` }} className='hidden sm:flex'>
@@ -43,7 +43,7 @@ const Navbar = () => {
             <Link href='/#gallery'>Nos Partenairs</Link>
           </li>
           <li className='p-4'>
-            <Link href='/work'>Témoignages</Link>
+            <Link href='/#instagram'>Témoignages</Link>
           </li>
           <li className='p-4'>
             <Link href='/contact'>Numéros utiles </Link>
