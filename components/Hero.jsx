@@ -15,7 +15,9 @@ const Hero = ({ heading, message }) => {
         <button className="px-8 mx-2 py-2 border ">
           <Link href="/protectform">Non</Link>
         </button>
-        <button className="px-8 py-2 border mx-2">Je suis témoin </button>
+        <button className="px-8 py-2 border mx-2">
+          <Link href="/protectform">Je suis témoin</Link>
+        </button>
       </div>
     </div>
   );
