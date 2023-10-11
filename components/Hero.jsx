@@ -9,13 +9,11 @@ const Hero = ({ heading, message }) => {
       <div className="p-5 text-white z-[2] mt-[-10rem]">
         <h2 className="text-5xl font-bold">{heading}</h2>
         <p className="py-5 text-xl">{message}</p>
-        <button className="px-8 mx-2 py-2 border ">
+        <button className="px-8 mx-2 py-2 border hover:bg-slate-400">
           <Link href="/protectform">Oui</Link>
         </button>
-        <button className="px-8 mx-2 py-2 border ">
-          <Link href="/protectform">Non</Link>
-        </button>
-        <button className="px-8 py-2 border mx-2">
+        
+        <button className="px-8 py-2 border mx-2 hover:bg-slate-400">
           <Link href="/protectform">Je suis témoin</Link>
         </button>
       </div>
