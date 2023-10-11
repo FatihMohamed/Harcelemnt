@@ -50,6 +50,7 @@ const Slider = ({ slides }) => {
               <FaArrowCircleRight
                 onClick={nextSlide}
                 className='absolute top-[50%] right-[30px] text-white/70 cursor-pointer select-none z-[2]'
+                z
                 size={50}
               />
             </div>
