@@ -20,7 +20,7 @@ const Slider = ({ slides }) => {
 
   return (
     <div id='gallery' className='max-w-[1240px] mx-auto'>
-      <h1 className='text-2xl font-bold text-center p-4'>Gallery</h1>
+      <h1 className='text-2xl font-bold text-center p-4'>Nos Partenaires</h1>
       <div className='relative flex justify-center p-4'>
 
       {SliderData.map((slide, index) => {
@@ -50,6 +50,7 @@ const Slider = ({ slides }) => {
               <FaArrowCircleRight
                 onClick={nextSlide}
                 className='absolute top-[50%] right-[30px] text-white/70 cursor-pointer select-none z-[2]'
+                z
                 size={50}
               />
             </div>

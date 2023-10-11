@@ -1,0 +1,18 @@
+import React from "react";
+import Danger from "../components/questions";
+
+function protectform() {
+  return (
+    <div className="flex items-center justify-center h-screen mb-12 bg-fixed bg-center bg-cover custom-img">
+      <h2 className="text-5xl font-bold"></h2>
+
+      <div>
+        <Danger
+          heading="Est-ce que le danger est imminent?"
+          message="l'agression est-il sur le point de se produire"
+        />
+      </div>
+    </div>
+  );
+}
+export default protectform;
