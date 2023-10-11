@@ -21,7 +21,7 @@ const Danger = ({ heading, message }) => {
 };
 
 
-export const physique = ({ heading, message }) => {
+export const Physique = ({ heading, message }) => {
   return (
     <div className="flex items-center justify-center h-screen mb-12 bg-fixed bg-center bg-cover custom-img">
       {/* Overlay */}
@@ -107,7 +107,7 @@ export const AgressionNature = ({ heading, message }) => {
         <h2 className="text-5xl font-bold">{heading}</h2>
         <p className="py-5 text-xl">{message}</p>
         <button className="px-8 mx-2 py-2 border hover:bg-slate-400">
-          <Link href="/physique">Physique</Link>
+          <Link href="/physiqueType">Physique</Link>
         </button>
         <button className="px-8 mx-2 py-2 border hover:bg-slate-400">
           <Link href="/call">Verbale</Link>
