@@ -18,6 +18,6 @@ export default function Home() {
       <Slider slides={SliderData} />
       <TestimonyButton />
       <Instagram />
-    </div>
+    </div>  
   );
 }
