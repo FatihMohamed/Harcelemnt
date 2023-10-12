@@ -1,16 +1,15 @@
 import React from "react";
-import { SendInfos } from "../components/Forms/SendInfos";
+import TestimonyForm from "../components/Forms/testimonyForms";
 
-
-function infoAssociation() {
+function testimonyForm() {
   return (
     <div className="flex items-center justify-center h-screen mb-12 bg-fixed bg-center bg-cover custom-img2">
       <h2 className="text-5xl font-bold"></h2>
 
       <div>
-        <SendInfos/> 
+        <TestimonyForm /> 
       </div>
     </div>
   );
 }
-export default infoAssociation;
+export default testimonyForm;

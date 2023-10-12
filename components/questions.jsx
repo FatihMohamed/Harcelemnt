@@ -109,7 +109,7 @@ export const AgressionNature = ({ heading, message }) => {
         <h2 className="text-5xl font-bold">{heading}</h2>
         <p className="py-5 text-xl">{message}</p>
         <button className="px-8 mx-2 py-2 border hover:bg-slate-400">
-          <Link href="/physiqueType">Physique</Link>
+          <Link href="/infoAssociation">Physique</Link>
         </button>
         <button className="px-8 mx-2 py-2 border hover:bg-slate-400">
           <Link href="/call">Verbale</Link>
@@ -121,6 +121,16 @@ export const AgressionNature = ({ heading, message }) => {
           <Link href="/call">Multiple</Link>
         </button>
       </div>
+    </div>
+  );
+};
+
+export const TestimonyButton = () => {
+  return (
+    <div className="flex items-center justify-center mb-4 bg-fixed bg-center">
+      <button className="px-8 mx-2 py-2 bg-black text-white hover:bg-slate-800">
+        <Link href="/testimonyForms">Témoigner</Link>
+      </button>
     </div>
   );
 };

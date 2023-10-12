@@ -2,6 +2,7 @@ import Head from 'next/head';
 import Image from 'next/image';
 import Hero from '../components/Hero';
 import Instagram from '../components/Instagram';
+import { TestimonyButton } from '../components/questions';
 import Slider from '../components/Slider';
 import { SliderData } from '../components/SliderData';
 
@@ -15,6 +16,7 @@ export default function Home() {
       </Head>
       <Hero heading="Vous pensez avoir été victime d'harcèlement sexuel ?" message="" />
       <Slider slides={SliderData} />
+      <TestimonyButton />
       <Instagram />
     </div>
   );
