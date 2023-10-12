@@ -101,6 +101,18 @@ export const AssoForm = () => {
           />
         </div>
         <div className="mb-4">
+          <label htmlFor="email" className="block text-sm font-medium text-gray-600">
+            Objet du message
+          </label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            className="mt-1 p-2 w-full border rounded-md"
+            placeholder="Ex: signalement d'un harcèlement"
+          />
+        </div>
+        <div className="mb-4">
           <label htmlFor="message" className="block text-sm font-medium text-gray-600">
             Message
           </label>
@@ -114,7 +126,7 @@ export const AssoForm = () => {
         </div>
         <button
           type="submit"
-          className="bg-blue-500 text-white py-2 px-4 rounded-md hover:bg-blue-600 focus:outline-none focus:ring focus:border-blue-300"
+          className="bg-slate-800 text-white py-2 px-4 rounded-md hover:bg-blue-600 focus:outline-none focus:ring focus:border-blue-300"
         >
           Envoyer
         </button>
