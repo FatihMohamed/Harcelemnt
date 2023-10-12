@@ -2,7 +2,6 @@ import { useRouter } from "next/router";
 import React, { useState } from "react";
 
 const TestimonyForm = () => {
-  // Create state to manage form input values
   const [dataForm, setDataForm] = useState({
     title: "",
     text: "",
@@ -10,8 +9,9 @@ const TestimonyForm = () => {
     imageUrl: ""
   });
   const [message, setMessage] = useState("");
-
-  // Handler for form input changes
+  
+  const router = useRouter(); // Make sure to call hooks at the top level
+  
   const handleChange = (e) => {
     setDataForm({
       ...dataForm,
@@ -19,11 +19,9 @@ const TestimonyForm = () => {
     });
   };
 
-  // Handler for form submission
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    // Send a POST request to the API
     fetch('/api/temoins', {
       method: 'POST',
       body: JSON.stringify(dataForm),
@@ -31,25 +29,16 @@ const TestimonyForm = () => {
         "Content-Type": "application/json"
       }
     })
-      .then(response => response.json())
-      .then(data => {
-        setMessage(data.message);
-        router.push('/#instagram');  // Use router.push to navigate
-
-      })
-
-
-
-      .catch(error => {
-        // Handle any errors with the request here
-        console.error('Error:', error);
-        setMessage("Error submitting form.");
-      });
-
-
-
+    .then(response => response.json())
+    .then(data => {
+      setMessage(data.message);
+      router.push('/#instagram');  // Now router is already defined, and this should work.
+    })
+    .catch(error => {
+      console.error('Error:', error);
+      setMessage("Error submitting form.");
+    });
   };
-
 
   return (
 

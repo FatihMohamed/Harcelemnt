@@ -1,5 +1,5 @@
 import React from "react";
-import TestimonyForm from "../components/Forms/testimonyForms";
+import TestimonyForm from "../components/AssoForm.jsx/testimonyForms";
 
 function testimonyForm() {
   return (
