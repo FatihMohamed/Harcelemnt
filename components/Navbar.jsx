@@ -42,7 +42,7 @@ return (
           <Link href='/'>Accueil</Link>
         </li>
         <li className='p-4'>
-          <Link href='/#gallery'>Nos Partenairs</Link>
+          <Link href='/#gallery'>Nos partenaires</Link>
         </li>
         {/* Dropdown for Témoignages */}
         <li className='relative group mt-4'>
