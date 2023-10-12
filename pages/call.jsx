@@ -9,8 +9,8 @@ return(
   
       <div>
         <Call
-          heading="Cliquez pour contacter la police"
-          message="Votre identité sera maintenue secrête tant que vous le souhatez"
+          heading="Contactez la police avec le 17"
+          message="Si danger ou pour prévenir une aggression"
         />
       </div>
     </div>
