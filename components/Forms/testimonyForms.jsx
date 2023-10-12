@@ -1,3 +1,4 @@
+import { useRouter } from "next/router";
 import React, { useState } from "react";
 
 const TestimonyForm = () => {
@@ -32,14 +33,21 @@ const TestimonyForm = () => {
     })
       .then(response => response.json())
       .then(data => {
-        // Handle the response data here
         setMessage(data.message);
+        router.push('/#instagram');  // Use router.push to navigate
+
       })
+
+
+
       .catch(error => {
         // Handle any errors with the request here
         console.error('Error:', error);
         setMessage("Error submitting form.");
       });
+
+
+
   };
 
 
