@@ -38,7 +38,7 @@ const Instagram = (props) => {
     <div id="instagram" className="max-w-[100vw] mx-auto text-center py-24">
       <p className="text-2xl font-bold mb-16">Témoignages anonymes </p>
 
-      <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-2 gap-2 p-4">
+      <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-2 gap-x-0 gap-y-10 p-4">
 
         {Array.isArray(state) && state.map((item, index) => (
           <InstagramImg
