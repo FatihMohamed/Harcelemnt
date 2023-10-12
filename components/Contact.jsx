@@ -9,12 +9,12 @@ const Contact = ({ title, message, imgLink }) => {
     >
       <a href="https://harcelement-france.com/">
         <img
-          className="rounded-t-lg"
+          className="rounded-t-lg h-24"
           src={imgLink}
           alt="Description de l'image"
         />
       </a>
-      <div className="p-5">
+      <div className="py-5 px-2 relative min-h-[24rem]">
         <a href="https://notreaccord.com/">
           <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
             {title}
@@ -25,7 +25,8 @@ const Contact = ({ title, message, imgLink }) => {
         </p>
         <a
           href="https://notreaccord.com/"
-          className="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+          className="absolute bottom-3 right-3 inline-flex items-center px-3 py-2 text-sm font-medium text-center
+        text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
         >
           Contacter
           <svg
@@ -51,7 +52,7 @@ const Contact = ({ title, message, imgLink }) => {
 
 export const ContactGrid = () => {
   return (
-    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+    <div className="px-8 pb-8 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
       {/* Répétez le composant Contact pour chaque carte */}
       <Contact
         title="notreaccord"
