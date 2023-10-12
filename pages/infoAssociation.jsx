@@ -1,6 +1,5 @@
 import React from "react";
-import { SendInfos } from "../components/Forms/SendInfos";
-
+import { SendInfos } from "../components/AssoForms/SendInfos";
 
 function infoAssociation() {
   return (
