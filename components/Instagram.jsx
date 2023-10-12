@@ -1,10 +1,5 @@
 import React from 'react'
 import IgImg1 from '../public/ig-img-1.jpeg';
-import IgImg2 from '../public/ig-img-2.jpeg';
-import IgImg3 from '../public/ig-img-3.jpeg';
-import IgImg4 from '../public/ig-img-4.jpeg';
-import IgImg5 from '../public/ig-img-5.jpeg';
-import IgImg6 from '../public/ig-img-6.jpeg';
 import InstagramImg from './InstagramImg';
 
 const Instagram = () => {
@@ -21,8 +16,8 @@ const Instagram = () => {
         <InstagramImg
           socialImg="https://images.unsplash.com/photo-1504447998170-f10353b5cb8b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1887&q=80"
           title="Le silence enfin brisé"
-description="Trois années de harcèlement insoutenable, tissées dans le quotidien par un patron abusif. Les mots dégradants, les gestes déplacés, une torture psychologique constante. Chaque journée était une lutte pour la dignité, perdue dans la peur et l'humiliation. Le silence pesait lourd, mais la résilience persistait. Briser le silence, un pas vers la guérison. Nous devons éclairer l'ombre du harcèlement, exiger justice, et édifier des lieux de travail exempts de toute tyrannie. Anonyme, mais pas silencieuse. #Survivante"          
-author="Ano #27"
+          description="Trois années de harcèlement insoutenable, tissées dans le quotidien par un patron abusif. Les mots dégradants, les gestes déplacés, une torture psychologique constante. Chaque journée était une lutte pour la dignité, perdue dans la peur et l'humiliation. Le silence pesait lourd, mais la résilience persistait. Briser le silence, un pas vers la guérison. Nous devons éclairer l'ombre du harcèlement, exiger justice, et édifier des lieux de travail exempts de toute tyrannie. Anonyme, mais pas silencieuse. #Survivante"
+          author="Ano #27"
         />
         <InstagramImg
           socialImg="https://images.unsplash.com/photo-1424896041628-083a222840f6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1887&q=80"
