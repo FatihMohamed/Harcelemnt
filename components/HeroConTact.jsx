@@ -13,7 +13,7 @@ const HeroContact = ({ heading, message }) => {
         <ScrollLink to="contactGrid" smooth={true} duration={500}>
           <button className="px-8 mx-2 py-2 border hover:bg-slate-400">
             {/* Arrow down Unicode character */}
-            <span className="text-3xl">&#8595;</span>
+            <span className="text-3xl">Voir plus</span>
           </button>
         </ScrollLink>
       </div>

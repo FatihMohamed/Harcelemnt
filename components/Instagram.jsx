@@ -74,7 +74,7 @@ const Instagram = (props) => {
         />
         <InstagramImg
           socialImg="https://images.unsplash.com/photo-1424896041628-083a222840f6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1887&q=80"
-          title="Merci à SafeWork"
+          title="Merci à nonCnon"
           description="Je tiens à exprimer ma gratitude envers SafeWork pour leur soutien inestimable. J'ai vécu une période difficile de harcèlement par une collègue, mais grâce à cette plateforme, j'ai trouvé l'aide nécessaire. Leur équipe dévouée m'a guidé à travers le processus, assurant confidentialité et professionnalisme. Enfin libéré de cette situation toxique, je suis reconnaissant envers SafeWork pour avoir restauré ma tranquillité d'esprit. Merci infiniment."
           author="Ano #76"
         />

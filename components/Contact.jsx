@@ -1,12 +1,13 @@
 import React from "react";
 import Link from "next/link";
+
 const Contact = ({ title, message, imgLink }) => {
   return (
     <div
       id="contactGrid"
       className="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700"
     >
-      <a href="/assoForm">
+      <a href="https://harcelement-france.com/">
         <img
           className="rounded-t-lg"
           src={imgLink}
@@ -14,7 +15,7 @@ const Contact = ({ title, message, imgLink }) => {
         />
       </a>
       <div className="p-5">
-        <a href="/assoForm">
+        <a href="https://notreaccord.com/">
           <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
             {title}
           </h5>
@@ -23,7 +24,7 @@ const Contact = ({ title, message, imgLink }) => {
           {message}
         </p>
         <a
-          href="/assoForm"
+          href="https://notreaccord.com/"
           className="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
         >
           Contacter
@@ -53,19 +54,19 @@ export const ContactGrid = () => {
     <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
       {/* Répétez le composant Contact pour chaque carte */}
       <Contact
-        title="Association1"
-        message="Cette Association a pour but de ve lutter contre les agressions physiques"
-        imgLink="https://images.unsplash.com/photo-1469571486292-0ba58a3f068b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
+        title="notreaccord"
+        message="Particulier ou entreprise, réglez votre conflit avec un médiateur certifié et spécialisé près de chez vous."
+        imgLink="https://blog.notreaccord.com/wp-content/uploads/2020/07/Logo_notre_accord_1-copie.png"
       />
       <Contact
-        title="Association2"
-        message="Cette Association a pour but de ve lutter contre les cas de harcellements sexuels"
-        imgLink="https://images.unsplash.com/photo-1643321613180-68d62b93cb79?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
+        title="ASSOCIATION LE CAP"
+        message="L’association a pour objet : • L’accueil, l’écoute, l’information et l’accompagnement de toute personne victime d'infraction liée aux violences au sein du couple, familiales et aux violences sexuelles et sexistes, que ces violences soient dans la sphère privé, publique, au travail "
+        imgLink="https://harcelement-france.com/wp-content/uploads/2019/10/Le-Cap.png"
       />
       <Contact
-        title="Association3"
-        message="Cette Association a pour but de ve lutter contre les viols/tentatives de viols"
-        imgLink="https://plus.unsplash.com/premium_photo-1681492071459-3a45f4289743?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2071&q=80"
+        title="Care"
+        message="CARE est une association de solidarité internationale qui lutte contre les inégalités dans des situations d'urgence et de développement."
+        imgLink="https://www.carefrance.org/wp-content/uploads/2022/01/logo-care.svg"
       />
       {/* Ajoutez plus de composants Contact selon le nombre de cartes que vous voulez afficher */}
     </div>
@@ -74,5 +75,4 @@ export const ContactGrid = () => {
 
 
 export default Contact;
-
 
