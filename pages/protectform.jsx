@@ -8,8 +8,8 @@ function protectform() {
 
       <div>
         <Danger
-          heading="Est-ce que le danger est imminent?"
-          message="l'agression est-il sur le point de se produire"
+          heading="Il y a t'il un danger imminent ?"
+          message="Une agression est-elle sur le point de se produire"
         />
       </div>
     </div>

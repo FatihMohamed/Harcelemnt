@@ -1,13 +1,13 @@
 import React from "react";
-import Danger from "../components/questions";
+import Physique from "../components/questions";
 
-function physique() {
+function physiqueType() {
   return (
     <div className="flex items-center justify-center h-screen mb-12 bg-fixed bg-center bg-cover custom-img">
       <h2 className="text-5xl font-bold"></h2>
 
       <div>
-        <Danger
+        <Physique
           heading="Vous avez subi une agression physique"
           message="Choisissez le type d'agression physique"
         />
@@ -15,4 +15,4 @@ function physique() {
     </div>
   );
 }
-export default physique;
+export default physiqueType;
