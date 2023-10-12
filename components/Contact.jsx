@@ -126,7 +126,7 @@ export const AssoForm = () => {
         </div>
         <button
           type="submit"
-          className="bg-slate-800 text-white py-2 px-4 rounded-md hover:bg-blue-600 focus:outline-none focus:ring focus:border-blue-300"
+          className="bg-slate-800 text-white py-2 px-4 rounded-md hover:bg-slate-900 focus:outline-none focus:ring focus:border-blue-300"
         >
           Envoyer
         </button>
