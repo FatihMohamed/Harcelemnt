@@ -16,6 +16,6 @@ export default function Home() {
       <Hero heading="Vous pensez avoir été victime d'harcèlement sexuel ?" message="" />
       <Slider slides={SliderData} />
       <Instagram />
-    </div>
+    </div>  
   );
 }
