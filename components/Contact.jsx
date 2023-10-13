@@ -1,180 +1,79 @@
-import React from 'react'
+import React from "react";
+import Link from "next/link";
 
-const Contact = () => {
+const Contact = ({ title, message, imgLink }) => {
   return (
-    <div className='max-w-[1240px] m-auto p-4 h-screen'>
-        <h1 className='text-2xl font-bold text-center p-4'>Let's work together</h1>
-        <form className='max-w-[600px] m-auto'>
-            <div className='grid grid-cols-2 gap-2'>
-                <input className='border shadow-lg p-3' type="text" placeholder='Name' />
-                <input className='border shadow-lg p-3' type="email" placeholder='Email' />
-            </div>
-            <input className='border shadow-lg p-3 w-full my-2' type="text" placeholder='Subject' />
-            <textarea className='border shadow-lg p-3 w-full' cols="30" rows="10" placeholder='Message'></textarea>
-            <button className='border shadow-lg p-3 w-full mt-2'>Submit</button>
-        </form>
-    </div>
-  )
-}
-
-export default Contact
-
-
-
-/**
- * body { padding: 2rem 0; }<label class="block mb-6">
-    <span class="text-gray-700">Your name</span>
-    <input
-      name="name"
-      type="text"
-      class="
-        block
-        w-full
-        mt-1
-        border-gray-300
-        rounded-md
-        shadow-sm
-        focus:border-indigo-300
-        focus:ring
-        focus:ring-indigo-200
-        focus:ring-opacity-50
-      "
-      placeholder="Joe Bloggs"
-    />
-  </label>
-  <label class="block mb-6">
-    <span class="text-gray-700">Email address</span>
-    <input
-      name="email"
-      type="email"
-      class="
-        block
-        w-full
-        mt-1
-        border-gray-300
-        rounded-md
-        shadow-sm
-        focus:border-indigo-300
-        focus:ring
-        focus:ring-indigo-200
-        focus:ring-opacity-50
-      "
-      placeholder="joe.bloggs@example.com"
-    />
-  </label>
-  <label class="block mb-6">
-    <span class="text-gray-700">When is your birthday?</span>
-    <input
-      name="birthday"
-      type="date"
-      class="
-        block
-        w-full
-        mt-1
-        border-gray-300
-        rounded-md
-        shadow-sm
-        focus:border-indigo-300
-        focus:ring
-        focus:ring-indigo-200
-        focus:ring-opacity-50
-      "
-    />
-  </label>
-  <label class="block mb-6">
-    <span class="text-gray-700"
-      >What kind of present you expect this year?</span
+    <div
+      id="contactGrid"
+      className="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700"
     >
-    <select
-      name="present"
-      class="
-        block
-        w-full
-        mt-1
-        border-gray-300
-        rounded-md
-        shadow-sm
-        focus:border-indigo-300
-        focus:ring
-        focus:ring-indigo-200
-        focus:ring-opacity-50
-      "
-    >
-      <option>Chocolate cake</option>
-      <option>Dancing cat</option>
-      <option>Custom meme about me</option>
-      <option>Zoom backgrounds for the rest of my life</option>
-    </select>
-  </label>
-  <div class="mb-6">
-    <div class="mt-2">
-      <div>
-        <label class="inline-flex items-center">
-          <input
-            name="season"
-            type="radio"
-            class="
-              text-indigo-600
-              border-gray-300
-              rounded-full
-              shadow-sm
-              focus:border-indigo-300
-              focus:ring
-              focus:ring-offset-0
-              focus:ring-indigo-200
-              focus:ring-opacity-50
-            "
-            checked
-          />
-          <span class="ml-2">I like summer</span>
-        </label>
-      </div>
-      <div>
-        <label class="inline-flex items-center">
-          <input
-            name="season"
-            type="radio"
-            class="
-              text-indigo-600
-              border-gray-300
-              rounded-full
-              shadow-sm
-              focus:border-indigo-300
-              focus:ring
-              focus:ring-offset-0
-              focus:ring-indigo-200
-              focus:ring-opacity-50
-            "
-          />
-          <span class="ml-2">I'm more into winter</span>
-        </label>
+      <a href="https://harcelement-france.com/">
+        <img
+          className="rounded-t-lg h-24"
+          src={imgLink}
+          alt="Description de l'image"
+        />
+      </a>
+      <div className="py-5 px-2 relative min-h-[24rem]">
+        <a href="https://notreaccord.com/">
+          <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+            {title}
+          </h5>
+        </a>
+        <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">
+          {message}
+        </p>
+        <a
+          href="https://notreaccord.com/"
+          className="absolute bottom-3 right-3 inline-flex items-center px-3 py-2 text-sm font-medium text-center
+        text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+        >
+          Contacter
+          <svg
+            className="w-3.5 h-3.5 ml-2"
+            aria-hidden="true"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 14 10"
+          >
+            <path
+              stroke="currentColor"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth="2"
+              d="M1 5h12m0 0L9 1m4 4L9 9"
+            />
+          </svg>
+        </a>
       </div>
     </div>
-  </div>
-  <div class="mb-6">
-    <button
-      type="submit"
-      class="
-        h-10
-        px-5
-        text-indigo-100
-        bg-indigo-700
-        rounded-lg
-        transition-colors
-        duration-150
-        focus:shadow-outline
-        hover:bg-indigo-800
-      "
-    >
-      Send Answers
-    </button>
-  </div>
-  <div>
-    <div class="mt-2 text-gray-700 text-right text-xs">
-      by
-      <a href="https://herotofu.com" class="hover:underline" target="_blank"
-        >HeroTofu</a
-      >
+  );
+};
+
+export const ContactGrid = () => {
+  return (
+    <div className="px-8 pb-8 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+      {/* Répétez le composant Contact pour chaque carte */}
+      <Contact
+        title="notreaccord"
+        message="Particulier ou entreprise, réglez votre conflit avec un médiateur certifié et spécialisé près de chez vous."
+        imgLink="https://blog.notreaccord.com/wp-content/uploads/2020/07/Logo_notre_accord_1-copie.png"
+      />
+      <Contact
+        title="ASSOCIATION LE CAP"
+        message="L’association a pour objet : • L’accueil, l’écoute, l’information et l’accompagnement de toute personne victime d'infraction liée aux violences au sein du couple, familiales et aux violences sexuelles et sexistes, que ces violences soient dans la sphère privé, publique, au travail "
+        imgLink="https://harcelement-france.com/wp-content/uploads/2019/10/Le-Cap.png"
+      />
+      <Contact
+        title="Care"
+        message="CARE est une association de solidarité internationale qui lutte contre les inégalités dans des situations d'urgence et de développement."
+        imgLink="https://www.carefrance.org/wp-content/uploads/2022/01/logo-care.svg"
+      />
+      {/* Ajoutez plus de composants Contact selon le nombre de cartes que vous voulez afficher */}
     </div>
-  </div>
- */
+  );
+};
+
+
+export default Contact;
+

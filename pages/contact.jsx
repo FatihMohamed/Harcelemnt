@@ -1,13 +1,13 @@
 import React from 'react'
-import Contact from '../components/Contact'
-import Hero from '../components/Hero'
+import  { ContactGrid } from '../components/Contact'
+import HeroContact from '../components/HeroConTact'
 
 const contact = () => {
   return (
-    <div>
-        <Hero heading='Contact' message='Submit the form below for more work and quotes.' />
-        <Contact />
-    </div>
+<div style={{ textAlign: 'center' }}>
+    <HeroContact heading='Pour des conseils, informations, ou simplement pour discuter, composez le 3919, un numéro national d aide pour les femmes victimes de violence, accessible depuis les téléphones fixes et mobiles.' message='' />
+    <ContactGrid />
+</div>
   )
 }
 

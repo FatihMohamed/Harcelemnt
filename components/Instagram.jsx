@@ -5,24 +5,57 @@ import IgImg3 from '../public/ig-img-3.jpeg';
 import IgImg4 from '../public/ig-img-4.jpeg';
 import IgImg5 from '../public/ig-img-5.jpeg';
 import IgImg6 from '../public/ig-img-6.jpeg';
+import { useState, useEffect } from 'react';
+
 import InstagramImg from './InstagramImg';
 
+const Instagram = (props) => {
 
-const Instagram = () => {
+  const [state, setState] = useState(false);
+
+  useEffect(() => {
+    newTemoignage()
+  }, [])
+
+  const newTemoignage = () => {
+    fetch("/api/temoins")
+      .then(response => {
+        if (!response.ok) {
+          throw new Error('Network response was not ok ' + response.statusText);
+        }
+        return response.json();
+      })
+      .then(data => {
+        console.log('API Data:', data); // Log data for debugging
+        setState(data.harcelementList);
+      })
+      .catch(error => {
+        console.error('Fetch Error:', error);
+      });
+  };
+
   return (
-    <div className='max-w-[1240px] mx-auto text-center py-24'>
-        <p className='text-2xl font-bold'>Follow me on Instagram</p>
-        <p className='pb-4'>@Captur</p>
-        <div className='grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-2 p-4'>
-            <InstagramImg socialImg={IgImg1} />
-            <InstagramImg socialImg={IgImg2} />
-            <InstagramImg socialImg={IgImg3} />
-            <InstagramImg socialImg={IgImg4} />
-            <InstagramImg socialImg={IgImg5} />
-            <InstagramImg socialImg={IgImg6} />
-        </div>
+    <div id="instagram" className="max-w-[100vw] mx-auto text-center py-24">
+      <p className="text-2xl font-bold mb-16">Témoignages anonymes </p>
+
+      <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-2 gap-x-0 gap-y-10 p-4">
+
+        {Array.isArray(state) && state.map((item, index) => (
+          <InstagramImg
+            key={index}
+            title={item.title}
+            socialImg={item.imageUrl}
+            description={item.text}
+            author={item.name}
+          />
+        ))}
+        
+      </div>
+
     </div>
-  )
+  );
 }
 
-export default Instagram
+
+
+export default Instagram; 

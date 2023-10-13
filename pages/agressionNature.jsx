@@ -1,18 +1,18 @@
 import React from "react";
-import Danger from "../components/questions";
+import {AgressionNature} from "../components/questions";
 
-function protectform() {
+function AgressionNatures() {
   return (
     <div className="flex items-center justify-center h-screen mb-12 bg-fixed bg-center bg-cover custom-img">
       <h2 className="text-5xl font-bold"></h2>
 
       <div>
-        <Danger
-          heading="Il y a t'il un danger imminent ?"
-          message="Une agression est-elle sur le point de se produire"
+        <AgressionNature
+          heading="Quelle est la nature de l'acte concerné ?"
+          message=""
         />
       </div>
     </div>
   );
 }
-export default protectform;
+export default AgressionNatures;
